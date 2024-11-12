@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,23 +39,26 @@
             width: 100%;
         }
 
-        .artists-menu, .albums-menu {
+        .artists-menu,
+        .albums-menu {
             background: rgba(255, 255, 255, 0.05);
             padding: 2rem;
             border-radius: 20px;
             flex: 1;
             backdrop-filter: blur(10px);
-            box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
         }
 
-        .artists-grid, .albums-grid {
+        .artists-grid,
+        .albums-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 1.5rem;
             margin-top: 1.5rem;
         }
 
-        .artist-card, .album-card {
+        .artist-card,
+        .album-card {
             background: rgba(255, 255, 255, 0.1);
             border-radius: 15px;
             padding: 1rem;
@@ -63,22 +67,25 @@
             transition: all 0.3s ease;
         }
 
-        .artist-card:hover, .album-card:hover {
+        .artist-card:hover,
+        .album-card:hover {
             transform: translateY(-5px);
             background: rgba(255, 255, 255, 0.15);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
 
-        .artist-image, .album-cover {
+        .artist-image,
+        .album-cover {
             width: 150px;
             height: 150px;
             border-radius: 10px;
             margin-bottom: 1rem;
             object-fit: cover;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         }
 
-        .artist-name, .album-name {
+        .artist-name,
+        .album-name {
             font-size: 1.2rem;
             margin-bottom: 0.5rem;
             font-weight: bold;
@@ -122,7 +129,7 @@
             backdrop-filter: blur(10px);
             border-radius: 20px;
             padding: 2rem;
-            box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
         }
 
         .player-section {
@@ -159,7 +166,7 @@
             margin: 0 auto 1.5rem;
             background-size: cover;
             background-position: center;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
             position: relative;
             overflow: hidden;
             transition: transform 0.3s ease;
@@ -192,7 +199,7 @@
         }
 
         .progress-bar {
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
             height: 6px;
             border-radius: 10px;
             position: relative;
@@ -222,7 +229,7 @@
             height: 12px;
             background: #fff;
             border-radius: 50%;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
             opacity: 0;
             transition: all 0.2s ease;
         }
@@ -233,7 +240,7 @@
 
         .timestamp-popup {
             position: absolute;
-            background: rgba(0,0,0,0.8);
+            background: rgba(0, 0, 0, 0.8);
             color: white;
             padding: 4px 8px;
             border-radius: 4px;
@@ -280,7 +287,7 @@
         }
 
         .btn:hover {
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
             transform: scale(1.1);
         }
 
@@ -290,12 +297,12 @@
             background: var(--gradient);
             color: var(--light);
             font-size: 2rem;
-            box-shadow: 0 5px 15px rgba(46,204,113,0.3);
+            box-shadow: 0 5px 15px rgba(46, 204, 113, 0.3);
         }
 
         .btn-play:hover {
             transform: scale(1.1);
-            box-shadow: 0 5px 20px rgba(46,204,113,0.5);
+            box-shadow: 0 5px 20px rgba(46, 204, 113, 0.5);
         }
 
         .volume-control {
@@ -310,7 +317,7 @@
             flex: 1;
             -webkit-appearance: none;
             height: 4px;
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 2px;
             cursor: pointer;
         }
@@ -333,7 +340,7 @@
             font-size: 1.5rem;
             margin-bottom: 1rem;
             padding-bottom: 1rem;
-            border-bottom: 2px solid rgba(255,255,255,0.1);
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
         }
 
         .playlist-item {
@@ -348,12 +355,12 @@
         }
 
         .playlist-item:hover {
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
             transform: translateX(10px);
         }
 
         .playlist-item.active {
-            background: rgba(46,204,113,0.2);
+            background: rgba(46, 204, 113, 0.2);
         }
 
         .playlist-item img {
@@ -383,7 +390,9 @@
         }
 
         @media (max-width: 768px) {
-            .menu-container, .container {
+
+            .menu-container,
+            .container {
                 flex-direction: column;
             }
 
@@ -393,6 +402,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="menu-container">
         <div class="artists-menu" id="artists-menu">
@@ -456,7 +466,7 @@
 
         <div class="playlist-section">
             <h3 class="playlist-header">Playlist</h3>
-            
+
         </div>
     </div>
 
@@ -474,457 +484,619 @@
         const cover = document.getElementById('cover');
         const volumeSlider = document.getElementById('volume');
         const timestampPopup = document.querySelector('.timestamp-popup');
-    
-        const artists = [
-    {
-        "name": "Reza Pishro",
-        "image": "https://i.scdn.co/image/ab67616100005174d080864ab0658c762384cb2b",
-        "albums": [
-            {
-                "name": "Vagheiyate Talkh",
-                "year": "2006",
-                "cover": "https://imgurl.ir/uploads/t32436_VagheiyateTalkh.jpg",
-                "songs": [
-                    {
-                        "title": "Barobax (Ft. Dariya)",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl2.sarimusic.in/Old/1396/10/18/Re/Reza%20Pishro%20-%20Vagheiyate%20Talkh/Reza%20Pishro%20-%20Vagheiyate%20Talkh/01.%20Barobax%20(Ft.%20Dariya).mp3",
-                        "coverArt": "https://imgurl.ir/uploads/t32436_VagheiyateTalkh.jpg",
-                        "duration": "1:31"
-                    },
-                    {
-                        "title": "Be To Che Marbot (Ft. Yar2)",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl2.sarimusic.in/Old/1396/10/18/Re/Reza%20Pishro%20-%20Vagheiyate%20Talkh/Reza%20Pishro%20-%20Vagheiyate%20Talkh/02.%20Be%20To%20Che%20Marbot%20(Ft.%20Yar2).mp3",
-                        "coverArt": "https://imgurl.ir/uploads/t32436_VagheiyateTalkh.jpg",
-                        "duration": "2:58"
-                    },
-                    {
-                        "title": "Change",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl2.sarimusic.in/Old/1396/10/18/Re/Reza%20Pishro%20-%20Vagheiyate%20Talkh/Reza%20Pishro%20-%20Vagheiyate%20Talkh/03.%20Change.mp3",
-                        "coverArt": "https://imgurl.ir/uploads/t32436_VagheiyateTalkh.jpg",
-                        "duration": "3:33"
-                    },
-                    {
-                        "title": "Diss Back Zedbazi (Ft. Fight Club & Hossein Tank & P.I.G)",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl2.sarimusic.in/Old/1396/10/18/Re/Reza%20Pishro%20-%20Vagheiyate%20Talkh/Reza%20Pishro%20-%20Vagheiyate%20Talkh/04.%20Diss%20Back%20Zedbazi%20(Ft.%20Fight%20Club%20&%20Hossein%20Tank%20&%20P.I.G).mp3",
-                        "coverArt": "https://imgurl.ir/uploads/t32436_VagheiyateTalkh.jpg",
-                        "duration": "3:12"
-                    },
-                    {
-                        "title": "Fuck All (Ft. Singy)",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl2.sarimusic.in/Old/1396/10/18/Re/Reza%20Pishro%20-%20Vagheiyate%20Talkh/Reza%20Pishro%20-%20Vagheiyate%20Talkh/05.%20Fuck%20All%20(Ft.%20Singy).mp3",
-                        "coverArt": "https://imgurl.ir/uploads/t32436_VagheiyateTalkh.jpg",
-                        "duration": "2:57"
-                    },
-                    {
-                        "title": "Khaterate Talkh",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl2.sarimusic.in/Old/1396/10/18/Re/Reza%20Pishro%20-%20Vagheiyate%20Talkh/Reza%20Pishro%20-%20Vagheiyate%20Talkh/06.%20Khaterate%20Talkh.mp3",
-                        "coverArt": "https://imgurl.ir/uploads/t32436_VagheiyateTalkh.jpg",
-                        "duration": "3:31"
-                    },
-                    {
-                        "title": "Khodahafez",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl2.sarimusic.in/Old/1396/10/18/Re/Reza%20Pishro%20-%20Vagheiyate%20Talkh/Reza%20Pishro%20-%20Vagheiyate%20Talkh/07.%20Khodahafez.mp3",
-                        "coverArt": "https://imgurl.ir/uploads/t32436_VagheiyateTalkh.jpg",
-                        "duration": "4:31"
-                    },
-                    {
-                        "title": "Labkhande Talkh",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl2.sarimusic.in/Old/1396/10/18/Re/Reza%20Pishro%20-%20Vagheiyate%20Talkh/Reza%20Pishro%20-%20Vagheiyate%20Talkh/08.%20Labkhande%20Talkh.mp3",
-                        "coverArt": "https://imgurl.ir/uploads/t32436_VagheiyateTalkh.jpg",
-                        "duration": "3:56"
-                    },
-                    {
-                        "title": "Tobe (Ft. Ho3ein)",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl2.sarimusic.in/Old/1396/10/18/Re/Reza%20Pishro%20-%20Vagheiyate%20Talkh/Reza%20Pishro%20-%20Vagheiyate%20Talkh/09.%20Tobe%20(Ft.%20Ho3ein).mp3",
-                        "coverArt": "https://imgurl.ir/uploads/t32436_VagheiyateTalkh.jpg",
-                        "duration": "2:35"
-                    },
-                    {
-                        "title": "Vagheiat (Ft. Tataloo & Ali Owj & Ho3ein)",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl2.sarimusic.in/Old/1396/10/18/Re/Reza%20Pishro%20-%20Vagheiyate%20Talkh/Reza%20Pishro%20-%20Vagheiyate%20Talkh/10.%20Vagheiat%20(Ft.%20Tataloo%20&%20Ali%20Owj%20&%20Ho3ein).mp3",
-                        "coverArt": "https://imgurl.ir/uploads/t32436_VagheiyateTalkh.jpg",
-                        "duration": "5:20"
-                    },
 
-                ]
-            },
+        const artists = [
             {
-                "name": "Jahanneme Saket",
-                "year": "2007",
-                "cover": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Jahaname-Saket-1.jpg",
-                "songs": [
+                "name": "Reza Pishro",
+                "image": "https://i.scdn.co/image/ab67616100005174d080864ab0658c762384cb2b",
+                "albums": [
                     {
-                        "title": "Intro",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2007-Jahaname%20Saket/01.Reza%20Pishro%20-%20Intro.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Jahaname-Saket-1.jpg",
-                        "duration": "1:14"
+                        "name": "Vagheiyate Talkh",
+                        "year": "2006",
+                        "cover": "https://imgurl.ir/uploads/t32436_VagheiyateTalkh.jpg",
+                        "songs": [
+                            {
+                                "title": "Barobax (Ft. Dariya)",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl2.sarimusic.in/Old/1396/10/18/Re/Reza%20Pishro%20-%20Vagheiyate%20Talkh/Reza%20Pishro%20-%20Vagheiyate%20Talkh/01.%20Barobax%20(Ft.%20Dariya).mp3",
+                                "coverArt": "https://imgurl.ir/uploads/t32436_VagheiyateTalkh.jpg",
+                                "duration": "1:31"
+                            },
+                            {
+                                "title": "Be To Che Marbot (Ft. Yar2)",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl2.sarimusic.in/Old/1396/10/18/Re/Reza%20Pishro%20-%20Vagheiyate%20Talkh/Reza%20Pishro%20-%20Vagheiyate%20Talkh/02.%20Be%20To%20Che%20Marbot%20(Ft.%20Yar2).mp3",
+                                "coverArt": "https://imgurl.ir/uploads/t32436_VagheiyateTalkh.jpg",
+                                "duration": "2:58"
+                            },
+                            {
+                                "title": "Change",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl2.sarimusic.in/Old/1396/10/18/Re/Reza%20Pishro%20-%20Vagheiyate%20Talkh/Reza%20Pishro%20-%20Vagheiyate%20Talkh/03.%20Change.mp3",
+                                "coverArt": "https://imgurl.ir/uploads/t32436_VagheiyateTalkh.jpg",
+                                "duration": "3:33"
+                            },
+                            {
+                                "title": "Diss Back Zedbazi (Ft. Fight Club & Hossein Tank & P.I.G)",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl2.sarimusic.in/Old/1396/10/18/Re/Reza%20Pishro%20-%20Vagheiyate%20Talkh/Reza%20Pishro%20-%20Vagheiyate%20Talkh/04.%20Diss%20Back%20Zedbazi%20(Ft.%20Fight%20Club%20&%20Hossein%20Tank%20&%20P.I.G).mp3",
+                                "coverArt": "https://imgurl.ir/uploads/t32436_VagheiyateTalkh.jpg",
+                                "duration": "3:12"
+                            },
+                            {
+                                "title": "Fuck All (Ft. Singy)",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl2.sarimusic.in/Old/1396/10/18/Re/Reza%20Pishro%20-%20Vagheiyate%20Talkh/Reza%20Pishro%20-%20Vagheiyate%20Talkh/05.%20Fuck%20All%20(Ft.%20Singy).mp3",
+                                "coverArt": "https://imgurl.ir/uploads/t32436_VagheiyateTalkh.jpg",
+                                "duration": "2:57"
+                            },
+                            {
+                                "title": "Khaterate Talkh",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl2.sarimusic.in/Old/1396/10/18/Re/Reza%20Pishro%20-%20Vagheiyate%20Talkh/Reza%20Pishro%20-%20Vagheiyate%20Talkh/06.%20Khaterate%20Talkh.mp3",
+                                "coverArt": "https://imgurl.ir/uploads/t32436_VagheiyateTalkh.jpg",
+                                "duration": "3:31"
+                            },
+                            {
+                                "title": "Khodahafez",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl2.sarimusic.in/Old/1396/10/18/Re/Reza%20Pishro%20-%20Vagheiyate%20Talkh/Reza%20Pishro%20-%20Vagheiyate%20Talkh/07.%20Khodahafez.mp3",
+                                "coverArt": "https://imgurl.ir/uploads/t32436_VagheiyateTalkh.jpg",
+                                "duration": "4:31"
+                            },
+                            {
+                                "title": "Labkhande Talkh",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl2.sarimusic.in/Old/1396/10/18/Re/Reza%20Pishro%20-%20Vagheiyate%20Talkh/Reza%20Pishro%20-%20Vagheiyate%20Talkh/08.%20Labkhande%20Talkh.mp3",
+                                "coverArt": "https://imgurl.ir/uploads/t32436_VagheiyateTalkh.jpg",
+                                "duration": "3:56"
+                            },
+                            {
+                                "title": "Tobe (Ft. Ho3ein)",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl2.sarimusic.in/Old/1396/10/18/Re/Reza%20Pishro%20-%20Vagheiyate%20Talkh/Reza%20Pishro%20-%20Vagheiyate%20Talkh/09.%20Tobe%20(Ft.%20Ho3ein).mp3",
+                                "coverArt": "https://imgurl.ir/uploads/t32436_VagheiyateTalkh.jpg",
+                                "duration": "2:35"
+                            },
+                            {
+                                "title": "Vagheiat (Ft. Tataloo & Ali Owj & Ho3ein)",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl2.sarimusic.in/Old/1396/10/18/Re/Reza%20Pishro%20-%20Vagheiyate%20Talkh/Reza%20Pishro%20-%20Vagheiyate%20Talkh/10.%20Vagheiat%20(Ft.%20Tataloo%20&%20Ali%20Owj%20&%20Ho3ein).mp3",
+                                "coverArt": "https://imgurl.ir/uploads/t32436_VagheiyateTalkh.jpg",
+                                "duration": "5:20"
+                            },
+
+                        ]
                     },
                     {
-                        "title": "Jahaname Saket",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2007-Jahaname%20Saket/02.Reza%20Pishro%20-%20Jahaname%20Saket.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Jahaname-Saket-1.jpg",
-                        "duration": "3:38"
+                        "name": "Jahanneme Saket",
+                        "year": "2007",
+                        "cover": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Jahaname-Saket-1.jpg",
+                        "songs": [
+                            {
+                                "title": "Intro",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2007-Jahaname%20Saket/01.Reza%20Pishro%20-%20Intro.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Jahaname-Saket-1.jpg",
+                                "duration": "1:14"
+                            },
+                            {
+                                "title": "Jahaname Saket",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2007-Jahaname%20Saket/02.Reza%20Pishro%20-%20Jahaname%20Saket.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Jahaname-Saket-1.jpg",
+                                "duration": "3:38"
+                            },
+                            {
+                                "title": "Boro Jolo",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2007-Jahaname%20Saket/03.Reza%20Pishro%20-%20Boro%20Jolo.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Jahaname-Saket-1.jpg",
+                                "duration": "3:51"
+                            },
+                            {
+                                "title": "Hedie",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2007-Jahaname%20Saket/04.Reza%20Pishro%20-%20Hedie.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Jahaname-Saket-1.jpg",
+                                "duration": "3:20"
+                            },
+                            {
+                                "title": "Baraye Rap",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2007-Jahaname%20Saket/05.Reza%20Pishro%20(Ft.%20Amir%20Tataloo)%20-%20Baraye%20Rap.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Jahaname-Saket-1.jpg",
+                                "duration": "4:06"
+                            },
+                            {
+                                "title": "Divooneh",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2007-Jahaname%20Saket/06.Reza%20Pishro%20-%20Divooneh.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Jahaname-Saket-1.jpg",
+                                "duration": "3:51"
+                            },
+                            {
+                                "title": "Az Hamatoon Bizaram",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2007-Jahaname%20Saket/07.Reza%20Pishro%20-%20Az%20Hamatoon%20Bizaram.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Jahaname-Saket-1.jpg",
+                                "duration": "3:21"
+                            },
+                            {
+                                "title": "Pedar",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2007-Jahaname%20Saket/08.Reza%20Pishro%20-%20Pedar.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Jahaname-Saket-1.jpg",
+                                "duration": "4:06"
+                            }
+                        ]
                     },
                     {
-                        "title": "Boro Jolo",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2007-Jahaname%20Saket/03.Reza%20Pishro%20-%20Boro%20Jolo.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Jahaname-Saket-1.jpg",
-                        "duration": "3:51"
+                        "name": "Aghaz Injast",
+                        "year": "2010",
+                        "cover": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Aghaz-Injast.jpg",
+                        "songs": [
+                            {
+                                "title": "Donyaro Fath Kon",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2010%20-%20Aghaz%20Injast/01.Pishro-Donyaro%20Fath%20Kon.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Aghaz-Injast.jpg",
+                                "duration": "2:21"
+                            },
+                            {
+                                "title": "Eshghe Zamini",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2010%20-%20Aghaz%20Injast/02.Pishro%20Ft%20Kaveh-Eshghe%20Zamini.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Aghaz-Injast.jpg",
+                                "duration": "2:31"
+                            },
+                            {
+                                "title": "Shahede Dard",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2010%20-%20Aghaz%20Injast/03.Pishro-Shahede%20Dard.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Aghaz-Injast.jpg",
+                                "duration": "3:31"
+                            },
+                            {
+                                "title": "Jangale Anbooh",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2010%20-%20Aghaz%20Injast/04.Pishro%20Ft%207Ganeh-Jangale%20Anbooh.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Aghaz-Injast.jpg",
+                                "duration": "3:12"
+                            },
+                            {
+                                "title": "Anboohe Javdaneha",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2010%20-%20Aghaz%20Injast/05.Pishro%20Ft%20Owj%20&%20BigBoy-Anboohe-Javdaneha.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Aghaz-Injast.jpg",
+                                "duration": "4:07"
+                            },
+                            {
+                                "title": "Too 5 Ghare",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2010%20-%20Aghaz%20Injast/06.Pishro%20Ft%20Satrap%20&%20Roozbe%20Qaem%20&%20Ghadar-Too%205%20Ghare.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Aghaz-Injast.jpg",
+                                "duration": "2:40"
+                            },
+                            {
+                                "title": "Aghaz Injast",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2010%20-%20Aghaz%20Injast/07.Pishro-Aghaz%20Injast.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Aghaz-Injast.jpg",
+                                "duration": "4:29"
+                            },
+                            {
+                                "title": "Jebhe",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2010%20-%20Aghaz%20Injast/08.Pishro-%20Jebhe.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Aghaz-Injast.jpg",
+                                "duration": "2:13"
+                            },
+                            {
+                                "title": "Arezoye Ziad",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2010%20-%20Aghaz%20Injast/09.Pishro-Arezoye%20Ziad.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Aghaz-Injast.jpg",
+                                "duration": "3:28"
+                            },
+                        ]
                     },
                     {
-                        "title": "Hedie",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2007-Jahaname%20Saket/04.Reza%20Pishro%20-%20Hedie.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Jahaname-Saket-1.jpg",
-                        "duration": "3:20"
+                        "name": "Dorane Talaei",
+                        "year": "2012",
+                        "cover": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Doran-Talaei.jpg",
+                        "songs": [
+                            {
+                                "title": "Intro",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2012%20-%20Dorane%20Talaei/01.Pishro%20-%20Intro%20(Dorane%20Talaei).mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Doran-Talaei.jpg",
+                                "duration": "3:37"
+                            },
+                            {
+                                "title": "Shahe Tehran",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2012%20-%20Dorane%20Talaei/02.Pishro%20Ft%20Owj%20-%20Shahe%20Tehran.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Doran-Talaei.jpg",
+                                "duration": "2:41"
+                            },
+                            {
+                                "title": "Ghabrestone HipHop",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2012%20-%20Dorane%20Talaei/03.Pishro%20-%20Ghabrestone%20HipHop.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Doran-Talaei.jpg",
+                                "duration": "3:59"
+                            },
+                            {
+                                "title": "Dore Donya",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2012%20-%20Dorane%20Talaei/04.Pishro%20-%20Dore%20Donya.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Doran-Talaei.jpg",
+                                "duration": "3:23"
+                            },
+                            {
+                                "title": "Etehad Az Rahe Door",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2012%20-%20Dorane%20Talaei/05.Pishro%20Ft%20Tohi%20-%20Etehad%20Az%20Rahe%20Door.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Doran-Talaei.jpg",
+                                "duration": "4:02"
+                            },
+                            {
+                                "title": "Nemishe Bahat Harf Zad",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2012%20-%20Dorane%20Talaei/06.Pishro%20Ft%20Tataloo%20-%20Nemishe%20Bahat%20Harf%20Zad.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Doran-Talaei.jpg",
+                                "duration": "2:48"
+                            },
+                            {
+                                "title": "Ey Kash",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2012%20-%20Dorane%20Talaei/07.Pishro%20-%20Ey%20Kash.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Doran-Talaei.jpg",
+                                "duration": "4:41"
+                            },
+                            {
+                                "title": "Vaghti Ke Man Mordam",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2012%20-%20Dorane%20Talaei/08.Pishro%20-%20Vaghti%20Ke%20Man%20Mordam.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Doran-Talaei.jpg",
+                                "duration": "4:41"
+                            },
+                            {
+                                "title": "Donyaye Ma",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2012%20-%20Dorane%20Talaei/09.Pishro%20-%20Donyaye%20Ma.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Doran-Talaei.jpg",
+                                "duration": "3:34"
+                            },
+                            {
+                                "title": "Sarzamine Yakh",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2012%20-%20Dorane%20Talaei/10.Pishro%20Ft%20Erfan%20-%20Sarzamine%20Yakh.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Doran-Talaei.jpg",
+                                "duration": "4:29"
+                            },
+                            {
+                                "title": "Rahe Nejat",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2012%20-%20Dorane%20Talaei/11.Pishro%20Ft%20Sogand%20-%20Rahe%20Nejat.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Doran-Talaei.jpg",
+                                "duration": "4:32"
+                            },
+                            {
+                                "title": "Dobare Padesham",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2012%20-%20Dorane%20Talaei/12.Pishro%20Ft%20Tataloo%20-%20Dobare%20Padesham.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Doran-Talaei.jpg",
+                                "duration": "3:11"
+                            },
+                            {
+                                "title": "Interview By Sahand",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2012%20-%20Dorane%20Talaei/13.Pishro%20-%20Outro%20-%20Interview%20By%20Sahand.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Doran-Talaei.jpg",
+                                "duration": "5:54"
+                            },
+                        ]
                     },
                     {
-                        "title": "Baraye Rap",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2007-Jahaname%20Saket/05.Reza%20Pishro%20(Ft.%20Amir%20Tataloo)%20-%20Baraye%20Rap.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Jahaname-Saket-1.jpg",
-                        "duration": "4:06"
+                        "name": "Rail",
+                        "year": "2017",
+                        "cover": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
+                        "songs": [
+                            {
+                                "title": "Avatar",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2017%20-%20Rail/01.Reza%20Pishro%20-%20Avatar.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
+                                "duration": "3:29"
+                            },
+                            {
+                                "title": "Hook",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2017%20-%20Rail/02.Reza%20Pishro%20-%20Hook.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
+                                "duration": "3:04"
+                            },
+                            {
+                                "title": "Skandari",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2017%20-%20Rail/03.Reza%20Pishro%20-%20Skandari.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
+                                "duration": "5:05"
+                            },
+                            {
+                                "title": "Holocaust",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2017%20-%20Rail/04.Reza%20Pishro%20-%20Holocaust.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
+                                "duration": "4:27"
+                            },
+                            {
+                                "title": "Miri Tu Lak",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2017%20-%20Rail/05.Reza%20Pishro%20-%20Miri%20Tu%20Lak%20(Ft%20Ho3ein).mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
+                                "duration": "3:59"
+                            },
+                            {
+                                "title": "My City",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2017%20-%20Rail/06.Reza%20Pishro%20-%20My%20City.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
+                                "duration": "3:41"
+                            },
+                            {
+                                "title": "Israfil Horn",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2017%20-%20Rail/07.Reza%20Pishro%20-%20Israfil%20Horn.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
+                                "duration": "4:43"
+                            },
+                            {
+                                "title": "Family Man",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2017%20-%20Rail/08.Reza%20Pishro%20-%20Family%20Man.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
+                                "duration": "3:32"
+                            },
+                            {
+                                "title": "Rap Game",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2017%20-%20Rail/09.Reza%20Pishro%20-%20Rap%20Game%20(Ft%20Owjii).mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
+                                "duration": "3:53"
+                            },
+                            {
+                                "title": "Boyz N The Hood",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2017%20-%20Rail/10.Reza%20Pishro%20-%20Boyz%20N%20The%20Hood.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
+                                "duration": "2:49"
+                            },
+                            {
+                                "title": "Dandune Babr",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2017%20-%20Rail/11.Reza%20Pishro%20-%20Dandune%20Babr.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
+                                "duration": "3:45"
+                            },
+                            {
+                                "title": "Carbon",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2017%20-%20Rail/12.Reza%20Pishro%20-%20Carbon.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
+                                "duration": "3:42"
+                            },
+                            {
+                                "title": "EMC2",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2017%20-%20Rail/13.Reza%20Pishro%20-%20EMC2.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
+                                "duration": "3:56"
+                            },
+                            {
+                                "title": "Davinci Secret",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2017%20-%20Rail/14.Reza%20Pishro%20-%20Davinci%20Secret.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
+                                "duration": "3:11"
+                            },
+                        ]
                     },
                     {
-                        "title": "Divooneh",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2007-Jahaname%20Saket/06.Reza%20Pishro%20-%20Divooneh.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Jahaname-Saket-1.jpg",
-                        "duration": "3:51"
+                        "name": "Azad ",
+                        "year": "2019",
+                        "cover": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Azad.jpg",
+                        "songs": [
+                            {
+                                "title": "Azad",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2019%20-%20Azad/01.Reza%20pishro%20-%20Azad%20(320).mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Azad.jpg",
+                                "duration": "3:22"
+                            },
+                            {
+                                "title": "Om",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2019%20-%20Azad/02.Reza%20pishro%20-%20Om%20(320).mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Azad.jpg",
+                                "duration": "4:43"
+                            },
+                            {
+                                "title": "Sianoor Nakhor",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2019%20-%20Azad/03.Reza%20pishro%20-%20Sianoor%20Nakhor%20(320).mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Azad.jpg",
+                                "duration": "3:54"
+                            },
+                            {
+                                "title": "Kasi Havasesh Beto Nist",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2019%20-%20Azad/04.Reza%20pishro%20-%20Kasi%20Havasesh%20Beto%20Nist%20(320).mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Azad.jpg",
+                                "duration": "4:00"
+                            },
+                            {
+                                "title": "Niloofare Abi",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2019%20-%20Azad/05.Reza%20pishro%20-%20Niloofare%20Abi%20(320).mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Azad.jpg",
+                                "duration": "3:26"
+                            },
+                            {
+                                "title": "Gladiator",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2019%20-%20Azad/06.Reza%20pishro%20-%20Gladiator%20(320).mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Azad.jpg",
+                                "duration": "4:39"
+                            },
+                            {
+                                "title": "7",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2019%20-%20Azad/07.Reza%20pishro%20-%207%20(320).mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Azad.jpg",
+                                "duration": "4:46"
+                            },
+                            {
+                                "title": "Noorafkan",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2019%20-%20Azad/08.Reza%20pishro%20-%20Noorafkan%20(320).mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Azad.jpg",
+                                "duration": "2:10"
+                            },
+                            {
+                                "title": "Marz",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2019%20-%20Azad/09.Reza%20pishro%20-%20Marz%20(320).mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Azad.jpg",
+                                "duration": "3:05"
+                            },
+                        ]
                     },
                     {
-                        "title": "Az Hamatoon Bizaram",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2007-Jahaname%20Saket/07.Reza%20Pishro%20-%20Az%20Hamatoon%20Bizaram.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Jahaname-Saket-1.jpg",
-                        "duration": "3:21"
+                        "name": "Parvaz ",
+                        "year": "2021",
+                        "cover": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Parvaz.jpg",
+                        "songs": [
+                            {
+                                "title": "Dasteto Khundam",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2021%20-%20Parvaz/01.Reza%20Pishro%20-%20Dasteto%20Khundam.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Parvaz.jpg",
+                                "duration": "3:46"
+                            },
+                            {
+                                "title": "Aghrab",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2021%20-%20Parvaz/02.Reza%20Pishro%20-%20Aghrab.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Parvaz.jpg",
+                                "duration": "4:42"
+                            },
+                            {
+                                "title": "Khakestari",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2021%20-%20Parvaz/03.Reza%20Pishro%20&%20Sogand%20-%20Khakestari.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Parvaz.jpg",
+                                "duration": "3:00"
+                            },
+                            {
+                                "title": "Jenset Nist",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2021%20-%20Parvaz/04.Reza%20Pishro%20&%20Sina%20SaE%20-%20Jenset%20Nist.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Parvaz.jpg",
+                                "duration": "5:19"
+                            },
+                            {
+                                "title": "Hadaf",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2021%20-%20Parvaz/05.Reza%20Pishro%20-%20Hadaf.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Parvaz.jpg",
+                                "duration": "3:21"
+                            },
+                            {
+                                "title": "Rockstar",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2021%20-%20Parvaz/06.Reza%20Pishro%20&%20Sadegh%20-%20Rockstar.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Parvaz.jpg",
+                                "duration": "4:06"
+                            },
+                            {
+                                "title": "Tamum Shode",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2021%20-%20Parvaz/07.Reza%20Pishro%20&%20Kamyar%20-%20Tamum%20Shode.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Parvaz.jpg",
+                                "duration": "5:11"
+                            },
+                            {
+                                "title": "New World",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2021%20-%20Parvaz/08.Reza%20Pishro%20-%20New%20World%20(Skit).mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Parvaz.jpg",
+                                "duration": "0:43"
+                            },
+                            {
+                                "title": "Poloto",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2021%20-%20Parvaz/09.Reza%20Pishro%20-%20Poloto.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Parvaz.jpg",
+                                "duration": "3:12"
+                            },
+                            {
+                                "title": "Jang",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2021%20-%20Parvaz/10.Reza%20Pishro%20&%20Ali%20Owj%20&%20Shayan%20Aspha%20-%20Jang.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Parvaz.jpg",
+                                "duration": "3:51"
+                            },
+                            {
+                                "title": "Namahdood",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2021%20-%20Parvaz/11.Reza%20Pishro%20-%20Namahdood.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Parvaz.jpg",
+                                "duration": "3:37"
+                            },
+                            {
+                                "title": "Sega",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2021%20-%20Parvaz/12.Reza%20Pishro%20-%20Sega%20(Skit).mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Parvaz.jpg",
+                                "duration": "0:40"
+                            },
+                            {
+                                "title": "Finish Him",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2021%20-%20Parvaz/13.Reza%20Pishro%20-%20Finish%20Him.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Parvaz.jpg",
+                                "duration": "4:16"
+                            },
+                            {
+                                "title": "Avaz Shode",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2021%20-%20Parvaz/14.Reza%20Pishro%20&%20Sina%20SaE%20&%20Ali%20Owj%20-%20Avaz%20Shode.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Parvaz.jpg",
+                                "duration": "8:11"
+                            },
+                            {
+                                "title": "Asad Roshane",
+                                "artist": "Reza Pishro",
+                                "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2021%20-%20Parvaz/15.Reza%20Pishro%20&%20Catchy%20Beatz%20-%20Asad%20Roshane.mp3",
+                                "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Parvaz.jpg",
+                                "duration": "3:42"
+                            }
+                            
+                        ]
                     },
-                    {
-                        "title": "Pedar",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2007-Jahaname%20Saket/08.Reza%20Pishro%20-%20Pedar.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Jahaname-Saket-1.jpg",
-                        "duration": "4:06"
-                    }
                 ]
-            },
-            {
-                "name": "Aghaz Injast",
-                "year": "2010",
-                "cover": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Aghaz-Injast.jpg",
-                "songs": [
-                    {
-                        "title": "Donyaro Fath Kon",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2010%20-%20Aghaz%20Injast/01.Pishro-Donyaro%20Fath%20Kon.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Aghaz-Injast.jpg",
-                        "duration": "2:21"
-                    },
-                    {
-                        "title": "Eshghe Zamini",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2010%20-%20Aghaz%20Injast/02.Pishro%20Ft%20Kaveh-Eshghe%20Zamini.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Aghaz-Injast.jpg",
-                        "duration": "2:31"
-                    },
-                    {
-                        "title": "Shahede Dard",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2010%20-%20Aghaz%20Injast/03.Pishro-Shahede%20Dard.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Aghaz-Injast.jpg",
-                        "duration": "3:31"
-                    },
-                    {
-                        "title": "Jangale Anbooh",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2010%20-%20Aghaz%20Injast/04.Pishro%20Ft%207Ganeh-Jangale%20Anbooh.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Aghaz-Injast.jpg",
-                        "duration": "3:12"
-                    },
-                    {
-                        "title": "Anboohe Javdaneha",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2010%20-%20Aghaz%20Injast/05.Pishro%20Ft%20Owj%20&%20BigBoy-Anboohe-Javdaneha.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Aghaz-Injast.jpg",
-                        "duration": "4:07"
-                    },
-                    {
-                        "title": "Too 5 Ghare",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2010%20-%20Aghaz%20Injast/06.Pishro%20Ft%20Satrap%20&%20Roozbe%20Qaem%20&%20Ghadar-Too%205%20Ghare.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Aghaz-Injast.jpg",
-                        "duration": "2:40"
-                    },
-                    {
-                        "title": "Aghaz Injast",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2010%20-%20Aghaz%20Injast/07.Pishro-Aghaz%20Injast.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Aghaz-Injast.jpg",
-                        "duration": "4:29"
-                    },
-                    {
-                        "title": "Jebhe",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2010%20-%20Aghaz%20Injast/08.Pishro-%20Jebhe.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Aghaz-Injast.jpg",
-                        "duration": "2:13"
-                    },
-                    {
-                        "title": "Arezoye Ziad",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2010%20-%20Aghaz%20Injast/09.Pishro-Arezoye%20Ziad.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Aghaz-Injast.jpg",
-                        "duration": "3:28"
-                    },
-                ]
-            },
-            {
-                "name": "Dorane Talaei",
-                "year": "2012",
-                "cover": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Doran-Talaei.jpg",
-                "songs": [
-                    {
-                        "title": "Intro",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2012%20-%20Dorane%20Talaei/01.Pishro%20-%20Intro%20(Dorane%20Talaei).mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Doran-Talaei.jpg",
-                        "duration": "3:37"
-                    },
-                    {
-                        "title": "Shahe Tehran",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2012%20-%20Dorane%20Talaei/02.Pishro%20Ft%20Owj%20-%20Shahe%20Tehran.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Doran-Talaei.jpg",
-                        "duration": "2:41"
-                    },
-                    {
-                        "title": "Ghabrestone HipHop",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2012%20-%20Dorane%20Talaei/03.Pishro%20-%20Ghabrestone%20HipHop.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Doran-Talaei.jpg",
-                        "duration": "3:59"
-                    },
-                    {
-                        "title": "Dore Donya",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2012%20-%20Dorane%20Talaei/04.Pishro%20-%20Dore%20Donya.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Doran-Talaei.jpg",
-                        "duration": "3:23"
-                    },
-                    {
-                        "title": "Etehad Az Rahe Door",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2012%20-%20Dorane%20Talaei/05.Pishro%20Ft%20Tohi%20-%20Etehad%20Az%20Rahe%20Door.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Doran-Talaei.jpg",
-                        "duration": "4:02"
-                    },
-                    {
-                        "title": "Nemishe Bahat Harf Zad",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2012%20-%20Dorane%20Talaei/06.Pishro%20Ft%20Tataloo%20-%20Nemishe%20Bahat%20Harf%20Zad.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Doran-Talaei.jpg",
-                        "duration": "2:48"
-                    },
-                    {
-                        "title": "Ey Kash",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2012%20-%20Dorane%20Talaei/07.Pishro%20-%20Ey%20Kash.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Doran-Talaei.jpg",
-                        "duration": "4:41"
-                    },
-                    {
-                        "title": "Vaghti Ke Man Mordam",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2012%20-%20Dorane%20Talaei/08.Pishro%20-%20Vaghti%20Ke%20Man%20Mordam.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Doran-Talaei.jpg",
-                        "duration": "4:41"
-                    },
-                    {
-                        "title": "Donyaye Ma",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2012%20-%20Dorane%20Talaei/09.Pishro%20-%20Donyaye%20Ma.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Doran-Talaei.jpg",
-                        "duration": "3:34"
-                    },
-                    {
-                        "title": "Sarzamine Yakh",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2012%20-%20Dorane%20Talaei/10.Pishro%20Ft%20Erfan%20-%20Sarzamine%20Yakh.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Doran-Talaei.jpg",
-                        "duration": "4:29"
-                    },
-                    {
-                        "title": "Rahe Nejat",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2012%20-%20Dorane%20Talaei/11.Pishro%20Ft%20Sogand%20-%20Rahe%20Nejat.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Doran-Talaei.jpg",
-                        "duration": "4:32"
-                    },
-                    {
-                        "title": "Dobare Padesham",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2012%20-%20Dorane%20Talaei/12.Pishro%20Ft%20Tataloo%20-%20Dobare%20Padesham.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Doran-Talaei.jpg",
-                        "duration": "3:11"
-                    },
-                    {
-                        "title": "Interview By Sahand",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2012%20-%20Dorane%20Talaei/13.Pishro%20-%20Outro%20-%20Interview%20By%20Sahand.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Doran-Talaei.jpg",
-                        "duration": "5:54"
-                    },
-                ]
-            },
-            {
-                "name": "Rail",
-                "year": "2017",
-                "cover": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
-                "songs": [
-                    {
-                        "title": "Avatar",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2017%20-%20Rail/01.Reza%20Pishro%20-%20Avatar.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
-                        "duration": "3:29"
-                    },
-                    {
-                        "title": "Hook",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2017%20-%20Rail/02.Reza%20Pishro%20-%20Hook.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
-                        "duration": "3:04"
-                    },
-                    {
-                        "title": "Skandari",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2017%20-%20Rail/03.Reza%20Pishro%20-%20Skandari.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
-                        "duration": "5:05"
-                    },
-                    {
-                        "title": "Holocaust",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2017%20-%20Rail/04.Reza%20Pishro%20-%20Holocaust.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
-                        "duration": "4:27"
-                    },
-                    {
-                        "title": "Miri Tu Lak",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2017%20-%20Rail/05.Reza%20Pishro%20-%20Miri%20Tu%20Lak%20(Ft%20Ho3ein).mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
-                        "duration": "3:59"
-                    },
-                    {
-                        "title": "My City",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2017%20-%20Rail/06.Reza%20Pishro%20-%20My%20City.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
-                        "duration": "3:41"
-                    },
-                    {
-                        "title": "Israfil Horn",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2017%20-%20Rail/07.Reza%20Pishro%20-%20Israfil%20Horn.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
-                        "duration": "4:43"
-                    },
-                    {
-                        "title": "Family Man",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2017%20-%20Rail/08.Reza%20Pishro%20-%20Family%20Man.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
-                        "duration": "3:32"
-                    },
-                    {
-                        "title": "Rap Game",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2017%20-%20Rail/09.Reza%20Pishro%20-%20Rap%20Game%20(Ft%20Owjii).mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
-                        "duration": "3:53"
-                    },
-                    {
-                        "title": "Boyz N The Hood",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2017%20-%20Rail/10.Reza%20Pishro%20-%20Boyz%20N%20The%20Hood.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
-                        "duration": "2:49"
-                    },
-                    {
-                        "title": "Dandune Babr",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2017%20-%20Rail/11.Reza%20Pishro%20-%20Dandune%20Babr.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
-                        "duration": "3:45"
-                    },
-                    {
-                        "title": "Carbon",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2017%20-%20Rail/12.Reza%20Pishro%20-%20Carbon.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
-                        "duration": "3:42"
-                    },
-                    {
-                        "title": "EMC2",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2017%20-%20Rail/13.Reza%20Pishro%20-%20EMC2.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
-                        "duration": "3:56"
-                    },
-                    {
-                        "title": "Davinci Secret",
-                        "artist": "Reza Pishro",
-                        "audioSrc": "https://dl.seesound.ir/Music/Hip-Hop/Reza%20Pishro/Album/2017%20-%20Rail/14.Reza%20Pishro%20-%20Davinci%20Secret.mp3",
-                        "coverArt": "https://www.seesound.ir/wp-content/uploads/2024/08/Reza-Pishro-Rail-Vol-1.jpg",
-                        "duration": "3:11"
-                    },
-                ]
-            },
-            // {
-            //     "name": "",
-            //     "year": "",
-            //     "cover": "",
-            //     "songs": [
-            //         {
-            //             "title": "",
-            //             "artist": "Reza Pishro",
-            //             "audioSrc": "",
-            //             "coverArt": "",
-            //             "duration": ":"
-            //         },
-            //         {
-            //             "title": "",
-            //             "artist": "Reza Pishro",
-            //             "audioSrc": "",
-            //             "coverArt": "",
-            //             "duration": ":"
-            //         },
-            //     ]
-            // },
-        ]
-    }
-];
-    
+            }
+        ];
+
         let songs = [];
         let songIndex = 0;
         let isPlaying = false;
         let isShuffled = false;
         let isRepeating = false;
-    
+
         function renderArtists() {
             const artistsGrid = document.getElementById('artists-grid');
             artistsGrid.innerHTML = artists.map((artist, index) => `
@@ -934,12 +1106,12 @@
                 </div>
             `).join('');
         }
-    
+
         function renderAlbums(artistIndex) {
             const artist = artists[artistIndex];
             const albumsGrid = document.getElementById('albums-grid');
             document.querySelector('.selected-artist').textContent = artist.name;
-            
+
             albumsGrid.innerHTML = artist.albums.map((album, albumIndex) => `
                 <div class="album-card" data-artist-index="${artistIndex}" data-album-index="${albumIndex}">
                     <img src="${album.cover}" alt="${album.name}" class="album-cover">
@@ -948,27 +1120,27 @@
                 </div>
             `).join('');
         }
-    
+
         function showAlbums(artistIndex) {
             document.getElementById('artists-menu').classList.add('hidden');
             document.getElementById('albums-menu').classList.remove('hidden');
             renderAlbums(artistIndex);
         }
-    
+
         function showArtists() {
             document.getElementById('albums-menu').classList.add('hidden');
             document.getElementById('artists-menu').classList.remove('hidden');
         }
-    
+
         function loadSong(song) {
             audio.src = song.audioSrc;
             document.querySelector('.song-title').textContent = song.title;
             document.querySelector('.artist').textContent = song.artist;
             cover.style.backgroundImage = `url('${song.coverArt}')`;
-            
+
             progress.style.width = '0%';
             currentTimeEl.textContent = '0:00';
-            
+
             audio.addEventListener('loadedmetadata', () => {
                 const duration = audio.duration;
                 const minutes = Math.floor(duration / 60);
@@ -976,19 +1148,19 @@
                 durationEl.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
             });
         }
-    
+
         function playSong() {
             isPlaying = true;
             playBtn.innerHTML = '<i class="fas fa-pause"></i>';
             audio.play();
         }
-    
+
         function pauseSong() {
             isPlaying = false;
             playBtn.innerHTML = '<i class="fas fa-play"></i>';
             audio.pause();
         }
-    
+
         function prevSong() {
             songIndex--;
             if (songIndex < 0) {
@@ -998,7 +1170,7 @@
             playSong();
             updatePlaylistActive();
         }
-    
+
         function nextSong() {
             songIndex++;
             if (songIndex > songs.length - 1) {
@@ -1008,26 +1180,26 @@
             playSong();
             updatePlaylistActive();
         }
-    
+
         function updateProgress(e) {
             const { duration, currentTime } = e.srcElement;
             if (isNaN(duration)) return;
-            
+
             const progressPercent = (currentTime / duration) * 100;
             progress.style.width = `${progressPercent}%`;
-    
+
             const minutes = Math.floor(currentTime / 60);
             const seconds = Math.floor(currentTime % 60);
             currentTimeEl.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
         }
-    
+
         function setProgress(e) {
             const width = this.clientWidth;
             const clickX = e.offsetX;
             const duration = audio.duration;
             audio.currentTime = (clickX / width) * duration;
         }
-    
+
         function showTimestamp(e) {
             const width = progressContainer.clientWidth;
             const clickX = e.offsetX;
@@ -1038,11 +1210,11 @@
             timestampPopup.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
             timestampPopup.style.left = `${clickX}px`;
         }
-    
+
         function createPlaylist() {
             const playlistSection = document.querySelector('.playlist-section');
             playlistSection.innerHTML = `<h3 class="playlist-header">Playlist</h3>`;
-            
+
             songs.forEach((song, index) => {
                 const playlistItem = `
                     <div class="playlist-item ${index === songIndex ? 'active' : ''}" data-index="${index}">
@@ -1057,7 +1229,7 @@
                 playlistSection.insertAdjacentHTML('beforeend', playlistItem);
             });
         }
-    
+
         function updatePlaylistActive() {
             document.querySelectorAll('.playlist-item').forEach(item => {
                 item.classList.remove('active');
@@ -1066,19 +1238,19 @@
                 }
             });
         }
-    
+
         function toggleShuffle() {
             isShuffled = !isShuffled;
             shuffleBtn.classList.toggle('active');
             shuffleBtn.style.color = isShuffled ? 'var(--primary)' : 'var(--light)';
         }
-    
+
         function toggleRepeat() {
             isRepeating = !isRepeating;
             repeatBtn.classList.toggle('active');
             repeatBtn.style.color = isRepeating ? 'var(--primary)' : 'var(--light)';
         }
-    
+
         function handleSongEnd() {
             if (isRepeating) {
                 audio.currentTime = 0;
@@ -1096,7 +1268,7 @@
                 nextSong();
             }
         }
-    
+
         function updatePlaylist(newSongs) {
             songs = newSongs;
             songIndex = 0;
@@ -1104,7 +1276,7 @@
             loadSong(songs[0]);
             playSong();
         }
-    
+
         playBtn.addEventListener('click', () => isPlaying ? pauseSong() : playSong());
         prevBtn.addEventListener('click', prevSong);
         nextBtn.addEventListener('click', nextSong);
@@ -1114,11 +1286,11 @@
         audio.addEventListener('ended', handleSongEnd);
         progressContainer.addEventListener('click', setProgress);
         progressContainer.addEventListener('mousemove', showTimestamp);
-        
+
         volumeSlider.addEventListener('input', (e) => {
             audio.volume = e.target.value / 100;
         });
-    
+
         document.getElementById('artists-grid').addEventListener('click', (e) => {
             const artistCard = e.target.closest('.artist-card');
             if (artistCard) {
@@ -1126,7 +1298,7 @@
                 showAlbums(artistIndex);
             }
         });
-    
+
         document.getElementById('albums-grid').addEventListener('click', (e) => {
             const albumCard = e.target.closest('.album-card');
             if (albumCard) {
@@ -1136,9 +1308,9 @@
                 updatePlaylist(albumSongs);
             }
         });
-    
+
         document.getElementById('back-to-artists').addEventListener('click', showArtists);
-    
+
         document.addEventListener('click', (e) => {
             if (e.target.closest('.playlist-item')) {
                 const item = e.target.closest('.playlist-item');
@@ -1148,9 +1320,9 @@
                 updatePlaylistActive();
             }
         });
-    
+
         document.addEventListener('keydown', (e) => {
-            switch(e.code) {
+            switch (e.code) {
                 case 'Space':
                     e.preventDefault();
                     isPlaying ? pauseSong() : playSong();
@@ -1163,9 +1335,10 @@
                     break;
             }
         });
-    
+
         renderArtists();
     </script>
-    
+
 </body>
+
 </html>
